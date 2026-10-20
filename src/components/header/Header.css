@@ -1,0 +1,47 @@
+.main-header {
+    background-color: var(--creme);
+    color: var(--garnet);
+    padding: 25px 3%;
+    display :flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap: 25px;
+}
+.main-header .header-brand{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 100%;
+}
+
+.main-header .header-logo{
+    width: 100px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.main-header h1{
+    font-family: "Playfair Display", serif;
+    font-size: 36px;
+    margin: 0;
+}
+
+@media only screen and (max-width: 768px){
+    .main-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-header .header-brand {
+        flex-direction: column;
+    }
+
+    .main-header .header-logo {
+        width: 120px;
+    }
+
+    .main-header h1 {
+        font-size: 30px;
+    }
+}
