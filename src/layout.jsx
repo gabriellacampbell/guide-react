@@ -1,0 +1,17 @@
+//this file tells us how every page is going to look
+import Header from "./components/header/Header";
+import Footer from "./components/footer/footer";
+import {Outlet} from "react-router-dom";
+
+
+const Layout = () => {
+    return (
+        <div id = "content">
+            <Header />
+            <Outlet />
+            <Footer />
+        </div>
+    )
+}
+
+export default Layout;

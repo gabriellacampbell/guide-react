@@ -1,0 +1,59 @@
+.home-hero{
+    padding:90px 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--lightpink);
+    min-height:380px;
+    box-sizing: border-box;
+}
+
+.home-hero-text{
+    width: 65%;
+    text-align: left;
+}
+
+.home-hero-text h2{
+    font-size: 38px;
+    margin: 10px 0 25px;
+    color: var(--garnet);
+    font-family: 'Playfair Display', serif;
+}
+
+.home-hero-text p{
+    font-size:17px;
+    color: black;
+    font-family: 'Lato', sans-serif;
+    line-height: 30px;
+    margin: 0;
+}
+
+.home-hero-palm {
+    width: 20%;
+    max-width: 230px;
+    margin-right: 4%;
+    height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .home-hero{
+        flex-direction: column;
+        padding: 50px 8%;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .home-hero-text{
+        width:100%;
+        text-align: center;
+    }
+
+    .home-hero-text h2{
+        font-size: 30px;
+    }
+
+    .home-hero-palm{
+        width: 35%;
+        margin:0;
+    }
+}

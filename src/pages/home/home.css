@@ -1,0 +1,32 @@
+#guides{
+    background-image: url("./images/stripes2.jpg");
+    padding: 60px 8%;
+    text-align: center;
+}
+#guides .columns{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+}
+
+#guides>h2{
+    font-size: 36px;
+    margin: 10px 0;
+    color: black;
+    font-family: 'Playfair Display', serif;
+}
+
+@media only screen and (max-width: 768px){
+    #guides{
+        padding: 50px 6%;
+    }
+
+    #guides>h2{
+        font-size: 32px;
+    }
+
+    #guides .columns{
+        display: block;
+    }
+}

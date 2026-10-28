@@ -1,5 +1,7 @@
 
 import Header from './components/header/Header';
+import Layout from "/Layout";
+import Home from "./pages/home/home"
 
 function App() {
   return (
