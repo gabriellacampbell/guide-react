@@ -1,8 +1,8 @@
-import "./About.css";
-import students from "./images/08-student-experience-sports-fountain.jpg";
+import "./About.css"
+import students from "./images/08-student-experience-sports-fountain.jpg"
 
 const About = () => {
-    return (
+    return(
         <section id="about">
             <div className="about-text">
                 <p className="about-label">
@@ -38,4 +38,4 @@ const About = () => {
     )
 }
 
-export default About;
+export default About

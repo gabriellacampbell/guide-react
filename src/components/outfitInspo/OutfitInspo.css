@@ -1,0 +1,19 @@
+.outfit-inspo{
+    min-width:0;
+}
+
+.outfit-inspo h3{
+    font-size:30px;
+    margin: 10px 0 20px;
+    font-family: 'Playfair Display', serif;
+    text-align:center;
+    color: black;
+}
+
+.outfit-inspo img{
+    display:block;
+    width:100%;
+    height:450px;
+    object-fit:contain;
+    margin-bottom:30px;
+}

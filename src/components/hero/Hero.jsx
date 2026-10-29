@@ -1,5 +1,5 @@
-import "./Hero.css";
-import palmTree from "./images/pt.png";
+import "./Hero.css"
+import palmTree from "./images/pt.png"
 
 const Hero = () => {
     return (
@@ -28,4 +28,4 @@ const Hero = () => {
     )
 }
 
-export default Hero;
+export default Hero

@@ -1,0 +1,48 @@
+.housing-map{
+    padding: 25px 8%;
+    background-color: var(--creme);
+}
+
+.housing-map-placeholder {
+    max-width: 1200px;
+    height: 500px;
+    margin:auto;
+    border: 10px solid var(--lightpink);
+    box-sizing:border-box;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    color: var(--garnet);
+    font-family: 'Lato', sans-serif;
+}
+
+#apartments{
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.55),
+            rgba(255, 255, 255, 0.55)
+        ),
+        url("./images/housingbackground.avif");
+    background-size: cover;
+    background-position: center;
+    padding:40px 5%;
+}
+
+.housing-grid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+@media only screen and (max-width: 768px){
+    .housing-grid{
+        grid-template-columns: 1fr;
+    }
+    .housing-map-placeholder{
+        height: 350px;
+    }
+}

@@ -1,0 +1,49 @@
+.listing-card{
+    background-color: var(--garnet);
+    border: 2px solid var(--creme);
+    color: var(--creme);
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    overflow:hidden;
+    box-sizing:border-box;
+}
+
+.listing-card>a{
+    display: block;
+}
+
+.listing-card img{
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.listing-card-text{
+    padding:20px;
+    text-align: center;
+}
+
+.listing-card h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    margin: 0 0 12px;
+}
+
+.listing-card a{
+    color: var(--creme);
+    text-decoration: none;
+}
+
+.listing-card a:hover{
+    text-decoration: underline;
+}
+
+.listing-card p{
+    color: var(--creme);
+    font-family: 'Lato', sans-serif;
+    font-size:16px;
+    line-height:25px;
+    margin: 0;
+}

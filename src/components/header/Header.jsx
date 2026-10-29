@@ -1,6 +1,6 @@
-import "./Header.css";
-import logo from "./images/logo.png";
-import Navigation from "../navigation/Navigation";
+import "./Header.css"
+import logo from "./images/logo.png"
+import Navigation from "../navigation/Navigation"
 
 const Header = () => {
     return (
@@ -14,4 +14,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default Header

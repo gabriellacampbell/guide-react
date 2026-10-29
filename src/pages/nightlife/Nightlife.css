@@ -1,0 +1,30 @@
+.nightlife-areas{
+    background-color: var(--lightpink);
+    padding: 25px 8% 40px;
+    display: grid;
+    gap: 30px;
+}
+
+.nightlife-bars{
+    background-color: var(--lightpink);
+    padding:65px 8%;
+}
+
+.nightlife-bars > h2{
+    color: var(--garnet);
+    font-family: 'Playfair Display', serif;
+    font-size:36px;
+    margin: 0 0 35px;
+    text-align: center;
+}
+
+.nightlife-bars-grid{
+    display:grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /*i googled this line*/
+    gap: 35px;
+}
+@media only screen and (max-width: 768px){
+    .nightlife-bars-grid{
+        grid-template-columns:1fr;
+    }
+}

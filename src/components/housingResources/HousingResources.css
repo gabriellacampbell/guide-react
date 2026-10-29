@@ -1,0 +1,41 @@
+.housing-resources{
+    background-color: var(--lightpink);
+    padding: 50px 8%;
+    display: flex;
+    gap: 20px;
+}
+
+.housing-living-guide{
+    background-color: var(--garnet);
+    padding:20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 0;
+}
+
+.housing-living-guide h3{
+    font-size: 30px;
+    margin: 10px 0;
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+    color: var(--creme);
+}
+
+.housing-living-guide ul {
+    padding-left: 25px;
+}
+
+.housing-living-guide li{
+    font-size: 20px;
+    text-align: left;
+    color: var(--creme);
+    font-family: 'Lato', sans-serif;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .housing-resources{
+        flex-direction: column;
+    }
+}

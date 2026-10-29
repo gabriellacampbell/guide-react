@@ -1,0 +1,30 @@
+.clothing-info-card{
+    background-color: var(--garnet);
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 0;
+}
+
+.clothing-info-card h3{
+    font-size: 30px;
+    margin: 10px 0;
+    font-family:'Playfair Display', serif;
+    text-align: left;
+    color: var(--creme);
+}
+.clothing-info-card ul{
+    padding-left:25px;
+}
+
+.clothing-info-card li{
+    font-size:20px;
+    color: var(--creme);
+    font-family: 'Lato', sans-serif;
+    line-height:28px;
+    margin-bottom: 20px;
+}
+
+.clothing-info-card a{
+    color: var(--creme);
+    text-decoration: underline;
+}

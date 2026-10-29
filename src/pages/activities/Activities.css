@@ -1,0 +1,28 @@
+#activities-list {
+    padding: 40px 5%;
+    background-color: var(--lightpink);
+    background-image:
+    linear-gradient(
+        rgba(255, 255, 255, 0.55),
+        rgba(255, 255, 255, 0.55)
+    ),
+    url("./images/background_generator_01.png");
+background-size: cover;
+background-position: center;
+}
+
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Small Screens */
+@media only screen and (max-width: 768px) {
+    .activities-grid {
+        grid-template-columns: 1fr;
+    }
+}

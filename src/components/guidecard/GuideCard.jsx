@@ -1,5 +1,5 @@
-import "./GuideCard.css";
-import {Link} from "react-router-dom";
+import "./GuideCard.css"
+import {Link} from "react-router-dom"
 
 const GuideCard = ({image, alt, title, description, link}) => {
     return (
@@ -16,4 +16,4 @@ const GuideCard = ({image, alt, title, description, link}) => {
     );
 };
 
-export default GuideCard;
+export default GuideCard

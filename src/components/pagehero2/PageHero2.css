@@ -1,0 +1,29 @@
+.page-hero {
+    background-color: var(--creme);
+}
+
+.page-hero-text {
+    padding: 40px 5% 30px;
+    text-align: left;
+}
+
+.page-hero-text h2 {
+    color: black;
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    margin: 0 0 20px;
+}
+
+.page-hero-text p {
+    color: black;
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+    margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .page-hero-text h2 {
+        font-size: 30px;
+    }
+}
