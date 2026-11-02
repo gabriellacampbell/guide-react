@@ -3,19 +3,14 @@
     background-color: var(--creme);
 }
 
-.housing-map-placeholder {
+.housing-map-frame{
+    display: block;
+    width: 100%;
     max-width: 1200px;
     height: 500px;
-    margin:auto;
+    margin: auto;
     border: 10px solid var(--lightpink);
-    box-sizing:border-box;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    text-align: center;
-    color: var(--garnet);
-    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
 }
 
 #apartments{
@@ -42,7 +37,7 @@
     .housing-grid{
         grid-template-columns: 1fr;
     }
-    .housing-map-placeholder{
+    .housing-map-frame{
         height: 350px;
     }
 }

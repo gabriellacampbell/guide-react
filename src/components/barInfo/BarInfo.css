@@ -35,14 +35,13 @@
     margin: 10px 8%;
     border:10px solid var(--lightpink);
     box-sizing: border-box;
-    background-color: var(--creme);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding: 15px;
-    text-align: center;
-    color: var(--garnet);
-    font-family: 'Lato', sans-serif;
+}
+
+.bar-info-placeholder iframe{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
 @media only screen and (max-width: 768px){

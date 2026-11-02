@@ -39,11 +39,22 @@
 #toggle-nav{
     display:block;
     color:var(--garnet);
+    background: none;
+    border: none;
     text-decoration:none;
     font-size:2em;
+    cursor: pointer;
+    margin: auto;
+}
+
+.main-nav ul.hide-small{
+    display:none;
 }
 
 @media screen and (min-width: 768px) {
+    .main-nav ul.hide-small{
+        display: flex;
+    }
     #toggle-nav{
         display:none;
     }

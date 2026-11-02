@@ -6,7 +6,7 @@ import activitiesImage from "./images/activities.png";
 import housingImage from "./images/housing.png";
 import clothingImage from "./images/clothing.png";
 import About from "../../components/about/About";
-
+import Contact from "../../components/contact/Contact";
 const Home = () => {
     return (
         <div id = "home">
@@ -50,7 +50,7 @@ const Home = () => {
             </section>
 
             <About />
-
+            <Contact />
         </div>
     )
 }

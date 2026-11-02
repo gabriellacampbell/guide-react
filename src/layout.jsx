@@ -2,11 +2,12 @@
 import Header from "./components/header/Header";
 import Footer from "./components/footer/footer";
 import {Outlet} from "react-router-dom";
-
+import { Toaster } from "react-hot-toast";
 
 const Layout = () => {
     return (
         <div id = "content">
+            <Toaster position="top-center" />
             <Header />
             <Outlet />
             <Footer />

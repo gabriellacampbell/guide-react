@@ -2,11 +2,23 @@ import "./Clothing.css"
 import PageHero2 from "../../components/pagehero2/PageHero2"
 import OutfitInspo from "../../components/outfitInspo/OutfitInspo"
 import ClothingInfo from "../../components/clothingInfo/ClothingInfo"
-import gamedayImage from "./images/outfit1.jpg"
-import goingoutImage from "./images/gooutfit1.png"
-import professionalImage from "./images/proutfit1.png"
+import { Tooltip } from "react-tooltip";
 
 const Clothing= () =>{
+    function importAll(r) {
+        return r.keys().map(r);
+    }
+    
+    const gamedayImages = importAll(
+        require.context("./images/slideshow1", false,  /\.(png|jpe?g|svg|webp)$/)
+    )
+    const goingoutImages = importAll(
+        require.context("./images/slideshow2", false,  /\.(png|jpe?g|svg|webp)$/)
+    )
+    const professionalImages = importAll(
+        require.context("./images/slideshow3", false,  /\.(png|jpe?g|svg|webp)$/)
+    )
+
     return(
         <main>
 
@@ -19,22 +31,25 @@ const Clothing= () =>{
                 <div className="clothing-outfit-grid">
                     <OutfitInspo
                         title="Gameday Inspiration"
-                        image={gamedayImage}
+                        images={gamedayImages}
                         alt="Gameday outfit inspiration"
                     />
 
                     <OutfitInspo
                         title="Going Out Inspiration"
-                        image={goingoutImage}
+                        images={goingoutImages}
                         alt="Going out outfit inspiration"
                     />
 
                     <OutfitInspo
                         title="Professional Clothing"
-                        image={professionalImage}
+                        images={professionalImages}
                         alt="Professional outfit inspiration"
                     />
                 </div>
+
+                <Tooltip id="outfit-help" clickable />
+                
             </section>
 
             <section className="clothing-info">

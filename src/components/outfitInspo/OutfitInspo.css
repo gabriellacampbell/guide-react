@@ -10,10 +10,36 @@
     color: black;
 }
 
-.outfit-inspo img{
-    display:block;
-    width:100%;
-    height:450px;
-    object-fit:contain;
-    margin-bottom:30px;
+.outfit-slideshow{
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.outfit-slideshow img{
+    display: block;
+    width: 100%;
+    height: 450px;
+    object-fit: contain;
+}
+
+.outfit-arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--garnet);
+    color: var(--creme);
+    border: none;
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.outfit-arrow-left {
+    left: 10px;
+}
+
+.outfit-arrow-right{
+    right: 10px;
 }

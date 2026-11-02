@@ -29,18 +29,21 @@ const Nightlife = () => {
                     title="Vista Union"
                     link="https://www.vistaunion.com/"
                     description="Vista Union is a restaurant and nightlife spot in the Vista that is great for dinner, craft cocktails, and spending time with friends. Its billiard room makes it a fun option for groups looking for something more than just a typical bar. Bars and venues in the area include Beach Bar & Grill, Baileys, and Vista"
+                    map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5834.0980032014095!2d-81.04368035613456!3d33.99981467628758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8bb75aca40063%3A0x1f3732059cda8bb1!2sThe%20Vista!5e0!3m2!1sen!2sus!4v1791764790888!5m2!1sen!2sus"
                 />
 
                 <BarInfo
                     title="Five Points"
                     link="https://fivepointscolumbia.com/"
                     description="Five Points is one of Columbia’s most popular nightlife areas, especially for USC students. The neighborhood has a mix of restaurants, live music, sports bars, and late-night spots, so it is easy to find something for different groups and moods. Bars and venues in the area include Social, Group Therapy, Luckys, Chicken on a Stick, Publico, Jake’s Bar & Grill, and CJ’s of Five Points."
+                    map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6615.297447749225!2d-81.02234870430365!3d34.001555487172034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8baccef53ad9b%3A0xe15467dadc5e53b1!2sFive%20Points%2C%20Columbia%2C%20SC%2029205!5e0!3m2!1sen!2sus!4v1791764414586!5m2!1sen!2sus"
                 />
 
                 <BarInfo
                     title="Frat Lots"
                     link="https://fraternitylot.com/"
                     description="The Fraternity Lot is a private game-day tailgating area near USC where many fraternity organizations gather before football games. It is not open to the general public, so students should check entry rules and wristband requirements before making plans."
+                    map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23296.327181682373!2d-81.01802496963639!3d33.984316763967904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8bb74fc1bdec7%3A0x2b0949b900ded09e!2sFraternity%20Lot!5e0!3m2!1sen!2sus!4v1791764885209!5m2!1sen!2sus"
                 />
             </section>
 
@@ -53,7 +56,7 @@ const Nightlife = () => {
                         alt="The Tin Roof"
                         title="The Tin Roof"
                         description="1022 Senate Street, Columbia, SC. Live music bar. A casual spot for food, drinks, and live music."
-                        link="#"
+                        link="https://tinroofcolumbia.com/"
                     />
 
                     <List
@@ -61,7 +64,7 @@ const Nightlife = () => {
                         alt="Luckys"
                         title="Luckys"
                         description="2100 Devine St, Columbia, SC. College nightlife bar. A popular Five Points stop for students looking for a lively night out."
-                        link="#"
+                        link="https://www.instagram.com/explore/locations/1873726529509721/luckys-of-columbia/?hl=en"
                     />
 
                     <List
@@ -69,7 +72,7 @@ const Nightlife = () => {
                         alt="Chicken on a Stick"
                         title="Chicken on a Stick"
                         description="724 Harden St, Columbia, SC. Bar and grill. A casual Five Points spot known for chicken on a stick, drinks, and late-night food."
-                        link="#"
+                        link="https://www.chickenonastickcola.com/"
                     />
 
                     <List
@@ -77,7 +80,7 @@ const Nightlife = () => {
                         alt="Jakes"
                         title="Jakes"
                         description="2112 Devine St, Columbia, SC. Neighborhood bar and grill. A relaxed Five Points bar with craft beer, bar food, and a dog-friendly patio."
-                        link="#"
+                        link="https://jakesofcolumbia.com/"
                     />
 
                     <List
@@ -85,7 +88,7 @@ const Nightlife = () => {
                         alt="Social"
                         title="Social"
                         description="632 Harden St, Columbia, SC. Sports bar and entertainment venue. A Gamecock-owned Five Points venue for food, drinks, sports, music, and nightlife."
-                        link="#"
+                        link="https://5pointssocial.com/"
                     />
 
                     <List
@@ -93,7 +96,7 @@ const Nightlife = () => {
                         alt="Group Therapy"
                         title="Group Therapy"
                         description="2107 Greene St, Columbia, SC. Neighborhood nightlife bar. A longtime Five Points bar with a casual setting for drinks and nights out with friends."
-                        link="#"
+                        link="https://www.instagram.com/grouptherapy5points/?hl=en"
                     />
 
                     <List
@@ -101,7 +104,7 @@ const Nightlife = () => {
                         alt="Saloon"
                         title="Saloon"
                         description="812 Harden St, Columbia, SC. Late-night bar. A lively Five Points bar that is a popular stop for students and groups."
-                        link="#"
+                        link="https://www.instagram.com/mooseheadsaloon/?hl=en"
                     />
 
                     <List
@@ -109,7 +112,7 @@ const Nightlife = () => {
                         alt="The Salty Nut"
                         title="The Salty Nut"
                         description="2000A Greene St, Columbia, SC. Restaurant and bar. A relaxed Five Points restaurant and bar near campus with food, drinks, and outdoor seating."
-                        link="#"
+                        link="https://www.saltynut.com/"
                     />
                 </div>
             </section>

@@ -24,10 +24,15 @@ const Housing = () => {
                 that feels like home while staying close to everything Carolina has to offer."
             />
 
-             <section className="housing-map" aria-label="Apartment map">
-                <div className="housing-map-placeholder">
-                    <p>Map of popular apartments near USC coming soon</p>
-                </div>
+            <section className="housing-map" aria-label="Apartment map">
+                <iframe
+                    className="housing-map-frame"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26463.268325347966!2d-81.06661319732669!3d33.994882887139305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8bb222ef131ed%3A0xeacf03dc9dd72d18!2sThe%20Mills!5e0!3m2!1sen!2sus!4v1791170354011!5m2!1sen!2sus"
+                    title="Map of The Mills near USC"
+                    loading="lazy"
+                    allowFullScreen
+                    referrerPolicy="strict-origin-when-cross-origin"
+                ></iframe>
             </section>
 
             <section id="apartments" aria-label="Student apartments">

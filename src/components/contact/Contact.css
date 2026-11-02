@@ -1,0 +1,78 @@
+#contact{
+    background-color:var(--lightpink);
+    padding:60px 9%;
+    text-align:center;
+}
+
+#contact h2{
+    color:var(--garnet);
+    font-family:'Playfair Display', serif;
+    font-size:36px;
+    margin: 0 0 10px;
+}
+#contact> p{
+    font-family: 'Lato', sans-serif;
+    font-size:17px;
+    margin-bottom:30px;
+}
+
+#contact-form{
+    background-color: var(--creme);
+    max-width:600px;
+    margin: auto;
+    padding: 30px;
+    text-align:left;
+    box-sizing:border-box;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .2);
+}
+
+#contact-form label{
+    display: block;
+    color: var(--garnet);
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    margin: 10px 0 7px;
+}
+
+#contact-form input,
+#contact-form textarea{
+    width: 100%;
+    padding: 12px;
+    border:1px solid var(--garnet);
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+#contact-form textarea{
+    min-height: 140px;
+    resize: vertical;
+}
+
+#contact-form button{
+    background-color:var(--garnet);
+    color:var(--creme);
+    border: none;
+    padding: 13px 22px;
+    margin-top: 25px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#contact-form #form-message{
+    min-height: 24px;
+    margin: 18px 0 0;
+    font-family:'Lato', sans-serif;
+    font-weight:bold;
+    color: var(--garnet);
+}
+
+@media only screen and (max-width: 768px){
+    #contact{
+        padding:40px 6%;
+    }
+    #contact-form{
+        padding:20px;
+    }
+}
