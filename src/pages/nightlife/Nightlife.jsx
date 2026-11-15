@@ -3,16 +3,35 @@ import NightlifeHero from "./images/generate_image_02.png"
 import BarInfo from "../../components/barInfo/BarInfo"
 import "./Nightlife.css"
 import List from "../../components/list/List"
-import tinroofImage from "./images/tinroof.jpg"
-import luckysImage from "./images/luckys.jpg"
-import chickenImage from "./images/chicken.jpg"
-import jakesImage from "./images/jakes.jpg"
-import socialImage from "./images/social.jpg"
-import groupImage from "./images/group.jpg"
-import saloonImage from "./images/saloon.jpg"
-import saltyImage from "./images/salty.jpg"
+import {useState, useEffect} from "react"
+
+const serverURL = "https://thegamecockguide-backend-m1fk.onrender.com"
 
 const Nightlife = () => {
+    const [bars, setBars] = useState([])
+    const [loading, setLoading] = useState(true)
+    const [error, setError] = useState("")
+
+    useEffect(() => {
+        const getBars = async () =>{
+            try {
+                const response = await fetch(serverURL + "/api/bars")
+
+                if(!response.ok){
+                    throw new Error("Could not load bars")
+                }
+
+                const data = await response.json()
+                setBars(data)
+            } catch(error) {
+                setError("The bars could not be loaded. Please try again later.")
+            } finally {
+                setLoading(false)
+            }
+        }
+
+        getBars()
+    }, [])
     return(
         <main>
             <PageHero
@@ -50,70 +69,20 @@ const Nightlife = () => {
             <section className="nightlife-bars">
                 <h2>Bars in Columbia</h2>
 
+                {loading && <p role="status">Loading bars...</p>}
+                {error && <p role="alert">{error}</p>}
+
                 <div className="nightlife-bars-grid">
-                    <List
-                        image={tinroofImage}
-                        alt="The Tin Roof"
-                        title="The Tin Roof"
-                        description="1022 Senate Street, Columbia, SC. Live music bar. A casual spot for food, drinks, and live music."
-                        link="https://tinroofcolumbia.com/"
-                    />
-
-                    <List
-                        image={luckysImage}
-                        alt="Luckys"
-                        title="Luckys"
-                        description="2100 Devine St, Columbia, SC. College nightlife bar. A popular Five Points stop for students looking for a lively night out."
-                        link="https://www.instagram.com/explore/locations/1873726529509721/luckys-of-columbia/?hl=en"
-                    />
-
-                    <List
-                        image={chickenImage}
-                        alt="Chicken on a Stick"
-                        title="Chicken on a Stick"
-                        description="724 Harden St, Columbia, SC. Bar and grill. A casual Five Points spot known for chicken on a stick, drinks, and late-night food."
-                        link="https://www.chickenonastickcola.com/"
-                    />
-
-                    <List
-                        image={jakesImage}
-                        alt="Jakes"
-                        title="Jakes"
-                        description="2112 Devine St, Columbia, SC. Neighborhood bar and grill. A relaxed Five Points bar with craft beer, bar food, and a dog-friendly patio."
-                        link="https://jakesofcolumbia.com/"
-                    />
-
-                    <List
-                        image={socialImage}
-                        alt="Social"
-                        title="Social"
-                        description="632 Harden St, Columbia, SC. Sports bar and entertainment venue. A Gamecock-owned Five Points venue for food, drinks, sports, music, and nightlife."
-                        link="https://5pointssocial.com/"
-                    />
-
-                    <List
-                        image={groupImage}
-                        alt="Group Therapy"
-                        title="Group Therapy"
-                        description="2107 Greene St, Columbia, SC. Neighborhood nightlife bar. A longtime Five Points bar with a casual setting for drinks and nights out with friends."
-                        link="https://www.instagram.com/grouptherapy5points/?hl=en"
-                    />
-
-                    <List
-                        image={saloonImage}
-                        alt="Saloon"
-                        title="Saloon"
-                        description="812 Harden St, Columbia, SC. Late-night bar. A lively Five Points bar that is a popular stop for students and groups."
-                        link="https://www.instagram.com/mooseheadsaloon/?hl=en"
-                    />
-
-                    <List
-                        image={saltyImage}
-                        alt="The Salty Nut"
-                        title="The Salty Nut"
-                        description="2000A Greene St, Columbia, SC. Restaurant and bar. A relaxed Five Points restaurant and bar near campus with food, drinks, and outdoor seating."
-                        link="https://www.saltynut.com/"
-                    />
+                    {bars.map((bar) => (
+                        <List
+                            key={bar._id}
+                            image={serverURL + "/" + bar.img_name}
+                            alt={bar.name}
+                            title={bar.name}
+                            description={`${bar.location}. ${bar.type}. ${bar.description}`}
+                            link={bar.link}
+                        />
+                    ))}
                 </div>
             </section>
 
