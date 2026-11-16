@@ -1,0 +1,110 @@
+.add-activity{
+    padding: 50px 8%;
+    background-color: var(--lightpink);
+}
+
+.add-activity-heading {
+    max-width: 850px;
+    margin: auto;
+}
+
+.add-activity h2{
+    color: var(--garnet);
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    margin: 0 0 10px;
+}
+
+.add-activity p{
+    font-family: 'Lato', sans-serif;
+    line-height: 26px;
+}
+
+.add-activity form{
+    max-width: 850px;
+    margin:25px auto 0;
+    padding: 30px;
+    background-color: var(--creme);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.15);
+    box-sizing: border-box;
+}
+
+.add-activity fieldset{
+    border: none;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+}
+
+.add-activity-grid{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    gap: 25px;
+}
+.add-activity-full {
+    grid-column: 1/-1;
+}
+
+.add-activity label{
+    display: block;
+    color: var(--garnet);
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.add-activity input,.add-activity textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--garnet);
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    min-width: 0;
+}
+
+.add-activity textarea{
+    min-height: 140px;
+    resize: vertical;
+}
+
+.add-activity small{
+    display: block;
+    margin-top: 7px;
+    font-family: 'Lato', sans-serif;
+    line-height: 22px;
+}
+
+.add-activity button{
+    background-color: var(--garnet);
+    color: var(--creme);
+    border: none;
+    border-radius: 5px;
+    padding: 13px 22px;
+    margin-top: 25px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.add-activity button:disabled{
+    opacity: .65;
+    cursor: wait;
+}
+
+.add-activity-result{
+    min-height: 26px;
+    margin-bottom: 0;
+    color: var(--garnet);
+    overflow-wrap: anywhere;
+}
+
+@media only screen and (max-width: 768px){
+    .add-activity-grid{
+        grid-template-columns: 1fr;
+    }
+    .add-activity form {
+        padding: 20px;
+    }
+}
