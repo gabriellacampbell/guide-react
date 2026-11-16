@@ -82,7 +82,7 @@ const AddActivity = ({serverURL, onAdd}) =>{
 
             onAdd(data)
             form.reset()
-            setResult("Your activity was added! Find it in the list below.")
+            setResult("Your activity was added! Find it in the list above.")
         } catch(error) {
             setResult("Unable to connect. Please try again.")
         } finally {
